@@ -1,0 +1,3 @@
+com.minatoorgtestcase.taskurltest.config.ApplicationRepositoriesAutoConfiguration
+com.minatoorgtestcase.taskurltest.config.ApplicationTransactionManagersAutoConfig
+com.minatoorgtestcase.taskurltest.config.ApplicationProvidersAutoConfiguration

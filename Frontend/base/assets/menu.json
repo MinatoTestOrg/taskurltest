@@ -1,0 +1,67 @@
+{
+  "left" : [ {
+    "pathsInvolved" : [ ],
+    "accessControl" : [ "a70538be-dfa2-4f72-b74e-2e8f3ed72066" ],
+    "label" : "Menu",
+    "element" : "menuItem"
+  }, {
+    "pathsInvolved" : [ "/applicationuser/applicationuserdetail", "/applicationuser/applicationuserlist" ],
+    "accessControl" : [ "a70538be-dfa2-4f72-b74e-2e8f3ed72066" ],
+    "onClick" : "navigate_to_page",
+    "page" : {
+      "sid" : "3e40a27b-60bb-4476-8937-4bcf150fd498",
+      "name" : "Application Users",
+      "url" : "/applicationuser/applicationuserlist"
+    },
+    "label" : "Application User",
+    "element" : "menuItem"
+  }, {
+    "customUrl" : "/exports/exportspage",
+    "pathsInvolved" : [ ],
+    "accessControl" : [ "all" ],
+    "onClick" : "navigate_to_url",
+    "outline" : false,
+    "valueChange" : true,
+    "currentNode" : "export-menu",
+    "icon" : {
+      "type" : "icon",
+      "icon" : {
+        "label" : "fas fa-upload",
+        "value" : "fas fa-upload"
+      },
+      "iconColor" : "#000000",
+      "iconSize" : "18px"
+    },
+    "enableOnlyIfRecordSelected" : false,
+    "label" : "Exports",
+    "element" : "menuItem"
+  }, {
+    "pathsInvolved" : [ "/taskurltesttable1/taskurltesttable1detail", "/taskurltesttable1/taskurltesttable1list" ],
+    "accessControl" : [ "all" ],
+    "onClick" : "navigate_to_page",
+    "outline" : false,
+    "infiniteScroll" : false,
+    "valueChange" : true,
+    "currentNode" : "86a8b482-b4e9-44c1-a5d5-ba2a3ec7eda9",
+    "enableOnlyIfRecordSelected" : false,
+    "page" : {
+      "sid" : "bc0e676d-489c-4b92-8c11-adbc158473d1",
+      "name" : "taskUrlTestTable1 List",
+      "url" : "/taskurltesttable1/taskurltesttable1list"
+    },
+    "label" : "taskUrlTestTable1 list page",
+    "element" : "menuItem"
+  } ],
+  "topBarLeft" : [ ],
+  "topBarMiddle" : [ ],
+  "topBarRight" : [ {
+    "pathsInvolved" : [ ],
+    "languages" : [ {
+      "code" : "en",
+      "name" : "English"
+    } ],
+    "element" : "language"
+  } ],
+  "right" : [ ],
+  "tabs" : [ ]
+}
