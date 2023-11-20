@@ -1,0 +1,47 @@
+{
+	"name": "DELETE_BY_ID",
+	"description":"Delete by id",
+	"inputModelName":"",
+	"outputModelName":"",
+	"setUp":[
+			   {
+				            "serviceType":"CREATE",
+				            "inputData":{
+                        "taskurltesttable1field2":"cI7rtMnNP8EmRoZMcbTvdOv5i",
+                        "taskurltesttable1field1":"YIINlJmPNy2BNvbIPQMVymuc3"
+             },
+				            "method":"POST",
+				            "requestUrl":"/rest/taskurltesttable1s/",
+				            "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"TaskUrlTestTable1"
+             },
+				            "userName":"DevelopmentAdministrator",
+				            "fileAttachmentInfo":[ 
+             ],
+				            "lookupConfiguration":{
+             }
+		     }
+	       ],
+	"requestDetails":{
+			           "serviceType":"DELETE_BY_IDS",
+			           "method":"DELETE",
+			           "requestUrl":"/rest/taskurltesttable1s/{ids}",
+			           "userName":"DevelopmentAdministrator"		
+	       },
+	"deleteRecordInfo":[{
+                        "tableRecordNo":1,
+                        "tableName":"TaskUrlTestTable1"
+             }
+	       ],
+	"outputData": [
+	       ],
+	"responseCode": 200,
+	"verifyUsingService":true,
+	"verificationRequestDetails":{
+			                        "method":"GET",
+			                        "requestUrl":"/rest/taskurltesttable1s/{sid}",
+			                        "expectedResponseCode":204,
+			                        "userName":"DevelopmentAdministrator"
+	       }
+}

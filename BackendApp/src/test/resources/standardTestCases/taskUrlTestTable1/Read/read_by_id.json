@@ -1,0 +1,51 @@
+{
+	"name": "READ_BY_ID",
+	"description":"Read by id",
+	"inputModelName":"com.minatoorgtestcase.taskurltest.model.TaskUrlTestTable1",
+	"outputModelName":"com.minatoorgtestcase.taskurltest.model.TaskUrlTestTable1",
+	"setUp":[
+			   {
+				            "serviceType":"CREATE",
+				            "inputData":{
+                        "taskurltesttable1field2":"HDsUQzETb7fmEjETiFgcL17Ry",
+                        "taskurltesttable1field1":"J4Feiz5X9jN02jPWS3LRfRHyQ"
+             },
+				            "method":"POST",
+				            "requestUrl":"/rest/taskurltesttable1s/",
+				            "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"TaskUrlTestTable1"
+             },
+				            "userName":"DevelopmentAdministrator",
+				            "fileAttachmentInfo":[ 
+             ],
+				            "lookupConfiguration":{
+             }
+		     }
+	       ],
+	"requestDetails":{
+			           "serviceType":"GET_BY_SID",
+			           "method":"GET",
+			           "requestUrl":"/rest/taskurltesttable1s/{sid}",
+			           "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"TaskUrlTestTable1"
+             },
+			           "userName":"DevelopmentAdministrator"		
+	       },
+	"outputData": [{
+                        "taskurltesttable1field2":"HDsUQzETb7fmEjETiFgcL17Ry",
+                        "taskurltesttable1field1":"J4Feiz5X9jN02jPWS3LRfRHyQ"
+             }
+	       ],
+	"responseCode": 200,
+	"verifyUsingService":false,
+	"tearDown":{
+			     "TaskUrlTestTable1":{
+                        "method":"DELETE",
+                        "requestUrl":"/rest/taskurltesttable1s/{ids}",
+                        "clearRecordsAfterTest":true,
+                        "userName":"DevelopmentAdministrator"
+             }		
+	       }
+}

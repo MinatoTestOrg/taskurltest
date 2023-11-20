@@ -1,0 +1,57 @@
+{
+	"name": "UPDATE_SUCCESS",
+	"description":"Update success",
+	"inputModelName":"com.minatoorgtestcase.taskurltest.model.TaskUrlTestTable1",
+	"outputModelName":"com.minatoorgtestcase.taskurltest.model.TaskUrlTestTable1",
+	"setUp":[
+			   {
+				            "serviceType":"CREATE",
+				            "inputData":{
+                        "taskurltesttable1field2":"DKDemTjoUXDjmBkf9FEJEqkXR",
+                        "taskurltesttable1field1":"XErKhYaVKqNYWbNV0ZxKZGcuW"
+             },
+				            "method":"POST",
+				            "requestUrl":"/rest/taskurltesttable1s/",
+				            "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"TaskUrlTestTable1"
+             },
+				            "userName":"DevelopmentAdministrator",
+				            "fileAttachmentInfo":[ 
+             ],
+				            "lookupConfiguration":{
+             }
+		     }
+	       ],
+	"requestDetails":{
+			           "serviceType":"UPDATE",
+			           "inputData":{
+                        "taskurltesttable1field2":"VHjIMv7NyCaRBd10UxrKXhEKF",
+                        "taskurltesttable1field1":"IAhDrbLOjMDVBdvK0tHKT2yQG"
+             },
+			           "method":"PUT",
+			           "requestUrl":"/rest/taskurltesttable1s/",
+			           "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"TaskUrlTestTable1"
+             },
+			           "userName":"DevelopmentAdministrator",
+			           "lookupConfiguration":{
+             }		
+	       },
+	"outputData": [{
+                        "taskurltesttable1field2":"VHjIMv7NyCaRBd10UxrKXhEKF",
+                        "taskurltesttable1field1":"IAhDrbLOjMDVBdvK0tHKT2yQG"
+             }
+	       ],
+	"responseCode": 200,
+	"verifyUsingService":false,
+	"tearDown":{
+			     "TaskUrlTestTable1":{
+                        "method":"DELETE",
+                        "requestUrl":"/rest/taskurltesttable1s/{ids}",
+                        "clearRecordsAfterTest":true,
+                        "userName":"DevelopmentAdministrator"
+             }		
+	       }
+}

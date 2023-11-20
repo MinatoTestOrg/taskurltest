@@ -1,0 +1,41 @@
+{
+	"name": "CREATE_SUCCESS",
+	"description":"Create success",
+	"inputModelName":"com.minatoorgtestcase.taskurltest.model.TaskUrlTestTable1",
+	"outputModelName":"com.minatoorgtestcase.taskurltest.model.TaskUrlTestTable1",
+	"setUp":[
+	       ],
+	"requestDetails":{
+			           "serviceType":"CREATE",
+			           "inputData":{
+                        "taskurltesttable1field2":"oDl9hsjbpiapX4GprN3l5yVf3",
+                        "taskurltesttable1field1":"oWWEdeLLlcbfawsx8AARhX4JM"
+             },
+			           "method":"POST",
+			           "requestUrl":"/rest/taskurltesttable1s/",
+			           "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"TaskUrlTestTable1"
+             },
+			           "userName":"DevelopmentAdministrator",
+			           "fileAttachmentInfo":[ 
+             ],
+			           "lookupConfiguration":{
+             }		
+	       },
+	"outputData": [{
+                        "taskurltesttable1field2":"oDl9hsjbpiapX4GprN3l5yVf3",
+                        "taskurltesttable1field1":"oWWEdeLLlcbfawsx8AARhX4JM"
+             }
+	       ],
+	"responseCode": 200,
+	"verifyUsingService":false,
+	"tearDown":{
+			     "TaskUrlTestTable1":{
+                        "method":"DELETE",
+                        "requestUrl":"/rest/taskurltesttable1s/{ids}",
+                        "clearRecordsAfterTest":true,
+                        "userName":"DevelopmentAdministrator"
+             }		
+	       }
+}
